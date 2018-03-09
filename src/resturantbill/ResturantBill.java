@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * @HenryHuang
+ * ResturantBill.java
+ * March 8, 2018
+ * This program is uses to calculate the total price of a resturant bill.
  */
 
 package resturantbill;
@@ -11,6 +12,7 @@ package resturantbill;
  * @author shhua8751
  */
 import java.text.*;
+
 public class ResturantBill {
 
     /**
@@ -18,14 +20,17 @@ public class ResturantBill {
      */
     
     public static void main(String[] args) {
+        //Listing all the variables will be use in the program.
         double price;
         double HST;
         double tips;
         double totalprice;
+        
+        //This code is uses to rounf the number into 2 decimal places.
         DecimalFormat x = new DecimalFormat ("###.##");
        
-        price = 20.56;
-        HST = price * 0.13; //Ontario HST is 13%.
+        price = 20.56;       //The price for the meal is $20.56.
+        HST = price * 0.13;  //Ontario HST is 13%.
         tips = price * 0.15; //Tips are 15%.
         
         totalprice = price + HST  + tips; //Total price is the sum of every factors
